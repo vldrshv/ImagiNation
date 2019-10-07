@@ -1,0 +1,2 @@
+rootProject.name='ImagiNation'
+include ':app'
