@@ -48,8 +48,16 @@
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_photo_grid.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\layout\\item_photo_grid.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recycle_view.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\layout\\activity_recycle_view.xml"
     },
     {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",

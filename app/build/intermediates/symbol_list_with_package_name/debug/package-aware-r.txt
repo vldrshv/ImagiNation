@@ -1217,6 +1217,7 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id photo_recycle_view
 id pin
 id progress_circular
 id progress_horizontal
@@ -1360,6 +1361,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_recycle_view
 layout activity_text_view
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1376,6 +1378,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout item_photo_grid
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
