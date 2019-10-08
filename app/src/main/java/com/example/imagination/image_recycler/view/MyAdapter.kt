@@ -5,27 +5,42 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.imagination.R
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Adapter
 import android.widget.ImageView
 import com.example.imagination.image_recycler.presenter.RecyclerViewPresenter
+import moxy.InjectViewState
+import moxy.MvpView
+import moxy.presenter.InjectPresenter
+import moxy.viewstate.strategy.SingleStateStrategy
+import moxy.viewstate.strategy.StateStrategyType
 
-class MyAdapter(var recyclerViewPresenter: RecyclerViewPresenter)
+
+class MyAdapter (var recyclerViewPresenter: RecyclerViewPresenter)
     : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_photo_grid, parent, false)
-        return MyViewHolder(view)
+        return MyViewHolder(view, recyclerViewPresenter)
     }
 
     override fun getItemCount(): Int {
         return recyclerViewPresenter.getItemCount()
     }
 
+    @StateStrategyType(value = SingleStateStrategy::class)
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
-        recyclerViewPresenter.bindView(holder);
+        recyclerViewPresenter.bindView(holder)
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), IViewHolder {
+
+    class MyViewHolder(itemView: View, var presenter: RecyclerViewPresenter)
+        : RecyclerView.ViewHolder(itemView), IViewHolder, View.OnClickListener {
+
         private var image: ImageView = itemView.findViewById(R.id.image)
+
+        init {
+            itemView.setOnClickListener(this)
+        }
 
         override fun setImageOne(imageId: Int) = image.setImageResource(imageId)
 
@@ -33,5 +48,10 @@ class MyAdapter(var recyclerViewPresenter: RecyclerViewPresenter)
 
         override fun getPos() = position
 
+        override fun onClick(v: View?) {
+            println(getPos())
+//            presenter.setPosition(getPos())
+            presenter.clicked(getPos())
+        }
     }
 }

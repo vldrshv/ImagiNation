@@ -1,5 +1,9 @@
 package moxy;
 
+import com.example.imagination.image_recycler.presenter.RecyclerViewPresenter;
+import com.example.imagination.image_recycler.presenter.RecyclerViewPresenter$$ViewStateProvider;
+import com.example.imagination.image_recycler.view.PhotoViewActivity;
+import com.example.imagination.image_recycler.view.PhotoViewActivity$$PresentersBinder;
 import com.example.imagination.text_viewer.presenter.TextViewPresenter;
 import com.example.imagination.text_viewer.presenter.TextViewPresenter$$ViewStateProvider;
 import com.example.imagination.text_viewer.view.TextViewActivity;
@@ -11,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import moxy.viewstate.strategy.AddToEndStrategy;
+import moxy.viewstate.strategy.SingleStateStrategy;
 
 public final class MoxyReflector {
 	private static Map<Class<?>, Object> sViewStateProviders;
@@ -21,13 +26,16 @@ public final class MoxyReflector {
 
 	static {
 		sViewStateProviders = new HashMap<>();
+		sViewStateProviders.put(RecyclerViewPresenter.class, new RecyclerViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(TextViewPresenter.class, new TextViewPresenter$$ViewStateProvider());
 
 		sPresenterBinders = new HashMap<>();
+		sPresenterBinders.put(PhotoViewActivity.class, Arrays.<Object>asList(new PhotoViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(TextViewActivity.class, Arrays.<Object>asList(new TextViewActivity$$PresentersBinder()));
 
 		sStrategies = new HashMap<>();
 		sStrategies.put(AddToEndStrategy.class, new AddToEndStrategy());
+		sStrategies.put(SingleStateStrategy.class, new SingleStateStrategy());
 	}
 
 	public static Object getViewState(Class<?> presenterClass) {

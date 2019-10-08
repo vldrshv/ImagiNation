@@ -16,7 +16,7 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
-        <activity android:name=".image_recycler.view.RecyclerViewActivity">
+        <activity android:name=".image_recycler.view.PhotoViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

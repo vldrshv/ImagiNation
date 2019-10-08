@@ -84,10 +84,10 @@ activity#com.example.imagination.text_viewer.view.TextViewActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
 		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:19-68
-activity#com.example.imagination.image_recycler.view.RecyclerViewActivity
+activity#com.example.imagination.image_recycler.view.PhotoViewActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-75
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-72
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN

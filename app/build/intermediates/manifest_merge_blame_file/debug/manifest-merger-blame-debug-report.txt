@@ -40,9 +40,9 @@
 28            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
 29            <!-- </intent-filter> -->
 30        </activity>
-31        <activity android:name="com.example.imagination.image_recycler.view.RecyclerViewActivity" >
+31        <activity android:name="com.example.imagination.image_recycler.view.PhotoViewActivity" >
 31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
-31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-75
+31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-72
 32            <intent-filter>
 32-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:13-24:29
 33                <action android:name="android.intent.action.MAIN" />
