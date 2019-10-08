@@ -1,8 +1,7 @@
 package com.example.imagination.image_recycler.view
 
-interface IViewHolder {
+interface IViewHolder  {
     fun setImageOne(imageId: Int)
-//    fun setImageTwo(imageId: Int)
-
+    fun setGrayBackground()
     fun getPos(): Int
 }

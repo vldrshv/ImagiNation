@@ -17,7 +17,6 @@ class TextViewPresenter() : MvpPresenter<IView>() {
 
     private fun setTextToView() = viewState.setText(textModel.text)
 
-
     private fun concatText(s: String) {
         textModel.text = textModel.text + s
     }
