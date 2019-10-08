@@ -17,9 +17,9 @@ class RecyclerViewPresenter {
         private val photoPresenter = PhotoPresenter()
         private val photoList: List<PhotoModel> = photoPresenter.getPhotoList()
 
-        override fun bindView(viewHolder: IViewHolder) {
-            val position = viewHolder.getPos()
-            viewHolder.setImageOne(photoList[position].imageId)
+        override fun bindView(iViewHolder: IViewHolder) {
+            val position = iViewHolder.getPos()
+            iViewHolder.setImageOne(photoList[position].imageId)
         }
 
         override fun getItemCount(): Int {

@@ -1,29 +1,25 @@
 package com.example.imagination.text_viewer.presenter
 
-import com.example.imagination.text_viewer.Interface
+import com.example.imagination.text_viewer.IView
 import com.example.imagination.text_viewer.model.TextModel
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
-class TextViewPresenter(view: Interface.View) : Interface.Presenter {
+@InjectViewState
+class TextViewPresenter() : MvpPresenter<IView>() {
     private val CLASS_TAG = "TextViewPresenter"
-    private var textModel: TextModel? = TextModel()
-    private var textViewActivity: Interface.View? = view
+    private var textModel: TextModel = TextModel()
 
-    override fun initiateConcat() {
-        val newText = getTextFromView()
+    fun initiateConcat(newText: String) {
         concatText(newText)
         setTextToView()
     }
 
-    override fun getTextFromView(): String {
-        return textViewActivity!!.getText()
-    }
+    private fun setTextToView() = viewState.setText(textModel.text)
 
-    override fun setTextToView() {
-        textViewActivity!!.setText(textModel!!.text)
-    }
 
-    override fun concatText(s: String) {
-        textModel!!.text = textModel!!.text + s
+    private fun concatText(s: String) {
+        textModel.text = textModel.text + s
     }
 
 }

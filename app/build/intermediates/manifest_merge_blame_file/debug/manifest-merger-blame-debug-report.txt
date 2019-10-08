@@ -32,27 +32,27 @@
 22        <activity android:name="com.example.imagination.text_viewer.view.TextViewActivity" >
 22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-18:20
 22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:19-68
-23
-24            <!-- <intent-filter> -->
-25            <!-- <action android:name="android.intent.action.MAIN" /> -->
-26
-27
-28            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-29            <!-- </intent-filter> -->
-30        </activity>
-31        <activity android:name="com.example.imagination.image_recycler.view.RecyclerViewActivity" >
-31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
-31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-75
-32            <intent-filter>
-32-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:13-24:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:21:17-69
-33-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:21:25-66
+23            <intent-filter>
+23-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:17-69
+24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:17-77
+26-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.imagination.image_recycler.view.RecyclerViewActivity" >
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-75
+30
+31            <!-- <intent-filter> -->
+32            <!-- <action android:name="android.intent.action.MAIN" /> -->
+33
 34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:23:17-77
-35-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:23:27-74
-36            </intent-filter>
+35            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+36            <!-- </intent-filter> -->
 37        </activity>
 38    </application>
 39
