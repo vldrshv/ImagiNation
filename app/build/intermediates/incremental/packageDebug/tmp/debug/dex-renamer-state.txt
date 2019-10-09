@@ -1,7 +1,7 @@
-#Tue Oct 08 18:52:49 MSK 2019
-base.0=C\:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Wed Oct 09 16:30:42 MSK 2019
+base.0=C\:\\Users\\vershov\\Desktop\\demo\\geek\\ImagiNation\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\vershov\\Desktop\\demo\\geek\\ImagiNation\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
