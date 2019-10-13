@@ -6,61 +6,83 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml
+8-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml
+9-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:5:5-30:19
+11-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:5:5-49:19
 12        android:allowBackup="true"
-12-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:6:9-35
+12-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\vershov\.gradle\caches\transforms-2\files-2.1\e79878761ceda7cd7fa53c34804b0578\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e79878761ceda7cd7fa53c34804b0578\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:extractNativeLibs="false"
 16        android:icon="@mipmap/ic_launcher"
-16-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:7:9-43
+16-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:7:9-43
 17        android:label="@string/app_name"
-17-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:8:9-41
+17-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:8:9-41
 18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:9:9-54
+18-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
-19-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:10:9-35
+19-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:10:9-35
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
-21-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity android:name="com.example.imagination.async_task.AsyncTaskActivity" >
-22-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:12:9-17:20
-22-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:12:19-63
+21-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.imagination.rxkotlin.RxMessageActivity" >
+22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:19-61
 23            <intent-filter>
-23-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:13:13-16:29
+23-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:13-17:29
 24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:14:17-69
-24-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:14:25-66
+24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:17-69
+24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:25-66
 25
 26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:15:17-77
-26-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:15:27-74
+26-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:17-77
+26-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:27-74
 27            </intent-filter>
 28        </activity>
-29        <activity android:name="com.example.imagination.text_viewer.view.TextViewActivity" >
-29-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:18:9-23:20
-29-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:18:19-68
+29        <activity android:name="com.example.imagination.messege_async.view.ObserverActivity" >
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-70
 30
 31            <!-- <intent-filter> -->
 32            <!-- <action android:name="android.intent.action.MAIN" /> -->
-33            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-34            <!-- </intent-filter> -->
-35        </activity>
-36        <activity android:name="com.example.imagination.image_recycler.view.PhotoViewActivity" >
-36-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:24:9-29:20
-36-->C:\Users\vershov\Desktop\demo\geek\ImagiNation\app\src\main\AndroidManifest.xml:24:19-72
-37
-38            <!-- <intent-filter> -->
-39            <!-- <action android:name="android.intent.action.MAIN" /> -->
-40            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-41            <!-- </intent-filter> -->
-42        </activity>
-43    </application>
-44
-45</manifest>
+33
+34
+35            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+36            <!-- </intent-filter> -->
+37        </activity>
+38        <activity android:name="com.example.imagination.async_task.AsyncTaskActivity" >
+38-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:9-34:20
+38-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:19-63
+39
+40            <!-- <intent-filter> -->
+41            <!-- <action android:name="android.intent.action.MAIN" /> -->
+42
+43
+44            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+45            <!-- </intent-filter> -->
+46        </activity>
+47        <activity android:name="com.example.imagination.text_viewer.view.TextViewActivity" >
+47-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:35:9-41:20
+47-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:35:19-68
+48
+49            <!-- <intent-filter> -->
+50            <!-- <action android:name="android.intent.action.MAIN" /> -->
+51            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+52            <!-- </intent-filter> -->
+53        </activity>
+54        <activity android:name="com.example.imagination.image_recycler.view.PhotoViewActivity" >
+54-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:42:9-48:20
+54-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:42:19-72
+55
+56            <!-- <intent-filter> -->
+57            <!-- <action android:name="android.intent.action.MAIN" /> -->
+58            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+59            <!-- </intent-filter> -->
+60        </activity>
+61    </application>
+62
+63</manifest>
