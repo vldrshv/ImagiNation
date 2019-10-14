@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".async_task.AsyncTaskActivity">
+    tools:context=".les2__async_task.AsyncTaskActivity">
 
     <Button
         android:id="@+id/buttonAsyncTask"

@@ -1,17 +1,17 @@
 package moxy;
 
-import com.example.imagination.async_task.AsyncPresenter;
-import com.example.imagination.async_task.AsyncPresenter$$ViewStateProvider;
-import com.example.imagination.async_task.AsyncTaskActivity;
-import com.example.imagination.async_task.AsyncTaskActivity$$PresentersBinder;
-import com.example.imagination.image_recycler.presenter.RecyclerViewPresenter;
-import com.example.imagination.image_recycler.presenter.RecyclerViewPresenter$$ViewStateProvider;
-import com.example.imagination.image_recycler.view.PhotoViewActivity;
-import com.example.imagination.image_recycler.view.PhotoViewActivity$$PresentersBinder;
-import com.example.imagination.text_viewer.presenter.TextViewPresenter;
-import com.example.imagination.text_viewer.presenter.TextViewPresenter$$ViewStateProvider;
-import com.example.imagination.text_viewer.view.TextViewActivity;
-import com.example.imagination.text_viewer.view.TextViewActivity$$PresentersBinder;
+import com.example.imagination.les1__image_recycler.presenter.RecyclerViewPresenter;
+import com.example.imagination.les1__image_recycler.presenter.RecyclerViewPresenter$$ViewStateProvider;
+import com.example.imagination.les1__image_recycler.view.PhotoViewActivity;
+import com.example.imagination.les1__image_recycler.view.PhotoViewActivity$$PresentersBinder;
+import com.example.imagination.les1__text_viewer.presenter.TextViewPresenter;
+import com.example.imagination.les1__text_viewer.presenter.TextViewPresenter$$ViewStateProvider;
+import com.example.imagination.les1__text_viewer.view.TextViewActivity;
+import com.example.imagination.les1__text_viewer.view.TextViewActivity$$PresentersBinder;
+import com.example.imagination.les2__async_task.AsyncPresenter;
+import com.example.imagination.les2__async_task.AsyncPresenter$$ViewStateProvider;
+import com.example.imagination.les2__async_task.AsyncTaskActivity;
+import com.example.imagination.les2__async_task.AsyncTaskActivity$$PresentersBinder;
 import java.lang.Class;
 import java.lang.Object;
 import java.util.Arrays;
@@ -31,14 +31,14 @@ public final class MoxyReflector {
 
 	static {
 		sViewStateProviders = new HashMap<>();
-		sViewStateProviders.put(AsyncPresenter.class, new AsyncPresenter$$ViewStateProvider());
 		sViewStateProviders.put(RecyclerViewPresenter.class, new RecyclerViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(TextViewPresenter.class, new TextViewPresenter$$ViewStateProvider());
+		sViewStateProviders.put(AsyncPresenter.class, new AsyncPresenter$$ViewStateProvider());
 
 		sPresenterBinders = new HashMap<>();
-		sPresenterBinders.put(AsyncTaskActivity.class, Arrays.<Object>asList(new AsyncTaskActivity$$PresentersBinder()));
 		sPresenterBinders.put(PhotoViewActivity.class, Arrays.<Object>asList(new PhotoViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(TextViewActivity.class, Arrays.<Object>asList(new TextViewActivity$$PresentersBinder()));
+		sPresenterBinders.put(AsyncTaskActivity.class, Arrays.<Object>asList(new AsyncTaskActivity$$PresentersBinder()));
 
 		sStrategies = new HashMap<>();
 		sStrategies.put(AddToEndSingleStrategy.class, new AddToEndSingleStrategy());

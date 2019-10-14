@@ -81,10 +81,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\us
 		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.imagination.rxkotlin.RxMessageActivity
+activity#com.example.imagination.les2__rxkotlin.RxMessageActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:19-61
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:19-90
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
@@ -95,22 +95,22 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:27-74
-activity#com.example.imagination.messege_async.view.ObserverActivity
+activity#com.example.imagination.les2__message_async.view.ObserverActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-70
-activity#com.example.imagination.async_task.AsyncTaskActivity
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:19-99
+activity#com.example.imagination.les2__async_task.AsyncTaskActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:19-63
-activity#com.example.imagination.text_viewer.view.TextViewActivity
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:19-92
+activity#com.example.imagination.les1__text_viewer.view.TextViewActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:35:9-41:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:35:19-68
-activity#com.example.imagination.image_recycler.view.PhotoViewActivity
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:35:19-97
+activity#com.example.imagination.les1__image_recycler.view.PhotoViewActivity
 ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:42:19-72
+		ADDED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:42:19-101
 uses-sdk
 INJECTED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml
