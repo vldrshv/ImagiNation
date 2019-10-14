@@ -1173,6 +1173,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id getMessageBtn
 id ghost_view
 id gone
 id group_divider
@@ -1376,6 +1377,7 @@ layout activity_lambda
 layout activity_observer
 layout activity_recycle_view
 layout activity_rx_message
+layout activity_single_rx
 layout activity_text_view
 layout custom_dialog
 layout design_bottom_navigation_item

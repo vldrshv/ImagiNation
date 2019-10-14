@@ -19,12 +19,21 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.imagination.les3__rxkotlin_lambda.LambdaActivity" >
+        <activity android:name="com.example.imagination.les3__single_rx_lambda.SingleRxActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.imagination.les3__rxkotlin_lambda.LambdaActivity" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name="com.example.imagination.les2__rxkotlin.RxMessageActivity" >
 

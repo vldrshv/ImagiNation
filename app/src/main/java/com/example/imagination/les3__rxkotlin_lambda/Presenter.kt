@@ -81,7 +81,6 @@ class Presenter (activityView: ActivityView){
                     emitter ->
                 try {
                     while (!emitter.isDisposed) {
-                        Log.d(CLASS_TAG, "EMITTER is disposed? - ${emitter.isDisposed}")
                         emitter.onNext(message)
                         Thread.sleep(1000)
                     }
