@@ -4,6 +4,10 @@
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\layout\\activity_text_view.xml"
     },
     {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lambda.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\layout\\activity_lambda.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },

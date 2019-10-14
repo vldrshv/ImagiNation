@@ -1195,6 +1195,7 @@ id line1
 id line3
 id listMode
 id list_item
+id logTv
 id masked
 id message
 id middle
@@ -1371,6 +1372,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_async_task
+layout activity_lambda
 layout activity_observer
 layout activity_recycle_view
 layout activity_rx_message
