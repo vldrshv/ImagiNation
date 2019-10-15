@@ -1184,6 +1184,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id inputText
 id invisible
@@ -1377,6 +1378,7 @@ layout activity_lambda
 layout activity_observer
 layout activity_recycle_view
 layout activity_rx_message
+layout activity_single_photo
 layout activity_single_rx
 layout activity_text_view
 layout custom_dialog

@@ -34,11 +34,13 @@ public final class MoxyReflector {
 		sViewStateProviders.put(RecyclerViewPresenter.class, new RecyclerViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(TextViewPresenter.class, new TextViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(AsyncPresenter.class, new AsyncPresenter$$ViewStateProvider());
+		sViewStateProviders.put(com.example.imagination.les3__image_recycler_extended.presenter.RecyclerViewPresenter.class, new com.example.imagination.les3__image_recycler_extended.presenter.RecyclerViewPresenter$$ViewStateProvider());
 
 		sPresenterBinders = new HashMap<>();
 		sPresenterBinders.put(PhotoViewActivity.class, Arrays.<Object>asList(new PhotoViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(TextViewActivity.class, Arrays.<Object>asList(new TextViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(AsyncTaskActivity.class, Arrays.<Object>asList(new AsyncTaskActivity$$PresentersBinder()));
+		sPresenterBinders.put(com.example.imagination.les3__image_recycler_extended.view.PhotoViewActivity.class, Arrays.<Object>asList(new com.example.imagination.les3__image_recycler_extended.view.PhotoViewActivity$$PresentersBinder()));
 
 		sStrategies = new HashMap<>();
 		sStrategies.put(AddToEndSingleStrategy.class, new AddToEndSingleStrategy());
