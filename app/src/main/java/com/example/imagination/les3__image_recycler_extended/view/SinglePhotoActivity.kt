@@ -15,6 +15,14 @@ class SinglePhotoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_photo)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
+        restoreView()
+    }
+
+    private fun restoreView() {
         val imageId = intent.getIntExtra("imageId", 0)
         val backgroundColor = intent.getIntExtra("backgroundColor", 0)
 
@@ -25,5 +33,9 @@ class SinglePhotoActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         Log.i(CLASS_TAG, "onBackPressed")
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
