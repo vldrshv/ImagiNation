@@ -10,13 +10,16 @@ class SinglePhotoActivity : AppCompatActivity() {
 
     private val CLASS_TAG = "SinglePhotoActivity"
 
+    // todo add presenter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_photo)
         val imageId = intent.getIntExtra("imageId", 0)
+        val backgroundColor = intent.getIntExtra("backgroundColor", 0)
 
         imageView.setImageResource(imageId)
-
+        imageView.setBackgroundColor(backgroundColor)
     }
 
     override fun onBackPressed() {

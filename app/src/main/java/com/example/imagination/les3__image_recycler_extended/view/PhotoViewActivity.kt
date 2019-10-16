@@ -39,9 +39,10 @@ class PhotoViewActivity : MvpAppCompatActivity(), PhotoView {
         Toast.makeText(this, s, Toast.LENGTH_LONG).show()
     }
 
-//    override fun openImage(: Int) {
-//        var intent: Intent = Intent(this, SinglePhotoActivity::class.java)
-//        intent.putExtra("image", id)
-//        startActivity(intent)
-//    }
+    override fun openImage(imageId: Int, backgroundColor: Int) {
+        val intent: Intent = Intent(this, SinglePhotoActivity::class.java)
+        intent.putExtra("imageId", imageId)
+        intent.putExtra("backgroundColor", backgroundColor)
+        startActivity(intent)
+    }
 }

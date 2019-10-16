@@ -21,6 +21,7 @@ import java.util.Map;
 import moxy.viewstate.strategy.AddToEndSingleStrategy;
 import moxy.viewstate.strategy.AddToEndStrategy;
 import moxy.viewstate.strategy.SingleStateStrategy;
+import moxy.viewstate.strategy.SkipStrategy;
 
 public final class MoxyReflector {
 	private static Map<Class<?>, Object> sViewStateProviders;
@@ -46,6 +47,7 @@ public final class MoxyReflector {
 		sStrategies.put(AddToEndSingleStrategy.class, new AddToEndSingleStrategy());
 		sStrategies.put(AddToEndStrategy.class, new AddToEndStrategy());
 		sStrategies.put(SingleStateStrategy.class, new SingleStateStrategy());
+		sStrategies.put(SkipStrategy.class, new SkipStrategy());
 	}
 
 	public static Object getViewState(Class<?> presenterClass) {
