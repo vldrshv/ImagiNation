@@ -1,18 +1,24 @@
 package com.example.imagination.img_api
 
 import com.example.imagination.img_api.model.ImageReqResult
+import com.example.imagination.img_api.model.Photo
 import io.reactivex.Observable
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Path
 import retrofit2.http.QueryMap
 
 interface ImageApi {
     @GET("curated")
     fun getImages(@Header("Authorization") authorization: String,
                   @QueryMap options: Map<String, String>): Observable<ImageReqResult>
+
+    @GET("photos/{id}")
+    fun getImage(@Header("Authorization") authorization: String,
+                  @Path("id") id: Int): Observable<Photo>
 
     companion object Factory {
         fun create() : ImageApi {

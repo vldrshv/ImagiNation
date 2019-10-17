@@ -19,8 +19,6 @@ import kotlin.random.Random
 class MyAdapter (var recyclerViewPresenter: RecyclerViewPresenter)
     : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-    private var photoList: List<Photo> = arrayListOf()
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_photo_grid, parent, false)
         return MyViewHolder(view, recyclerViewPresenter)
@@ -48,13 +46,9 @@ class MyAdapter (var recyclerViewPresenter: RecyclerViewPresenter)
             itemView.setOnClickListener(this)
         }
 
-//        override fun setImageOne(id: Int) {
         override fun setImageOne(sourceUrl: String) {
-
             Log.i(CLASS_TAG, sourceUrl)
-            Picasso.get().load(sourceUrl).into(image)
-//            image.setImageResource(imageId)
-//            image.setImageResource(id)//R.drawable.ic_launcher_foreground)
+            Picasso.get().load(sourceUrl).resize(600, 400).centerCrop().into(image)
         }
 
         override fun setBackground(color: Int) {

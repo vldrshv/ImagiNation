@@ -712,6 +712,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color successColor
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1151,6 +1152,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id descriptionTv
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1165,8 +1167,10 @@ id end
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
+id expandBtn
 id expand_activities_button
 id expanded_menu
+id externalInfoLayout
 id fill
 id fill_horizontal
 id fill_vertical
