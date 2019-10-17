@@ -1,4 +1,4 @@
-#Thu Oct 17 17:56:15 MSK 2019
+#Thu Oct 17 17:58:41 MSK 2019
 base.0=C\:\\Users\\vershov\\Desktop\\demo\\geek\\ImagiNation\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
