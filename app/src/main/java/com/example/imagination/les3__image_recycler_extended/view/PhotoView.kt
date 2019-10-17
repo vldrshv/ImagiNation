@@ -10,4 +10,6 @@ interface PhotoView : MvpView {
     fun showToast(s: String)
     @StateStrategyType(value = SkipStrategy::class)
     fun openImage(imageId: Int, backgroundColor: Int)
+    @StateStrategyType(value = SkipStrategy::class)
+    fun notifyDataChanged()
 }

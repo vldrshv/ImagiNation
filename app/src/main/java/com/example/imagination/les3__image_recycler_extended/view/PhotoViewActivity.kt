@@ -11,6 +11,7 @@ import com.example.imagination.les3__image_recycler_extended.presenter.RecyclerV
 import kotlinx.android.synthetic.main.activity_recycle_view.*
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 
 class PhotoViewActivity : MvpAppCompatActivity(), PhotoView {
     //: AppCompatActivity() {
@@ -44,5 +45,10 @@ class PhotoViewActivity : MvpAppCompatActivity(), PhotoView {
         intent.putExtra("imageId", imageId)
         intent.putExtra("backgroundColor", backgroundColor)
         startActivity(intent)
+    }
+
+    override fun notifyDataChanged() {
+        val myAdapter = photo_recycle_view.adapter
+        myAdapter!!.notifyDataSetChanged()
     }
 }
