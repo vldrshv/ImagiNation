@@ -1,6 +1,7 @@
 package com.example.imagination.les3__image_recycler_extended.presenter
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.imagination.R
@@ -60,9 +61,9 @@ class RecyclerViewPresenter : IRecyclerViewPresenter, MvpPresenter<PhotoView>() 
     }
 
     override fun clicked(pos: Int) {
-        viewState.showToast("$pos")
         val img = photoList[pos]
         viewState.showToast(img.url)
+        Log.i(CLASS_TAG, img.toString())
         viewState.openImage(img.id)
     }
 

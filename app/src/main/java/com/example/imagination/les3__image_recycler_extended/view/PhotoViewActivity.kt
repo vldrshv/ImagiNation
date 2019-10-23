@@ -41,6 +41,7 @@ class PhotoViewActivity : MvpAppCompatActivity(), PhotoView {
     private fun initRefreshing() {
         refreshLayout.setOnRefreshListener(recyclerViewPresenter.recyclerViewRefreshListener())
     }
+
     override fun showToast(s: String) {
         Toast.makeText(this, s, Toast.LENGTH_LONG).show()
     }

@@ -18,5 +18,15 @@ class Photo {
         var portrait: String =  ""
         var landscape: String =  ""
         var tiny: String =  ""
+        override fun toString(): String {
+            return "Source(original='$original', large='$large', large2x='$large2x', medium='$medium', small='$small', portrait='$portrait', landscape='$landscape', tiny='$tiny')"
+        }
+
     }
+
+    override fun toString(): String {
+        return "Photo(id=$id, width=$width, height=$height, url='$url', photographer='$photographer', src=$src)"
+    }
+
+
 }
