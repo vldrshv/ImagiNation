@@ -18,6 +18,7 @@ class SearchImageProvider (private val imageApi: ImageApi) {
     private var CLASS_TAG = "SearchImageProvider"
 
     fun searchImage(): Observable<ImageReqResult> {
+        Log.i(CLASS_TAG, "page = $_page")
         var options: HashMap<String, String> = hashMapOf()
         options["per_page"] = 20.toString()
         options["page"] = _page.toString()
@@ -26,6 +27,8 @@ class SearchImageProvider (private val imageApi: ImageApi) {
     }
 
     private fun increasePage() = _page++
+
+    fun resetPage() { _page = 1 }
 }
 
 class SingleImageProvider(private val imageApi: ImageApi) {

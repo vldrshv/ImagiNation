@@ -1228,9 +1228,11 @@ id parent_matrix
 id percent
 id photo_recycle_view
 id pin
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id refreshLayout
 id right
 id right_icon
 id right_side

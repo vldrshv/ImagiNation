@@ -12,4 +12,8 @@ interface PhotoView : MvpView {
     fun openImage(imageId: Int)
     @StateStrategyType(value = SkipStrategy::class)
     fun notifyDataChanged()
+    @StateStrategyType(value = SkipStrategy::class)
+    fun stopRefreshing()
+    @StateStrategyType(value = SkipStrategy::class)
+    fun showLoading(isShown: Boolean)
 }

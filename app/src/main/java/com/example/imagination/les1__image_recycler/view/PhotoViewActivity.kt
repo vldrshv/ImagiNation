@@ -20,15 +20,15 @@ class PhotoViewActivity : MvpAppCompatActivity(), PhotoView {
         setContentView(R.layout.activity_recycle_view)
 
 //        recyclerViewPresenter = RecyclerViewPresenter()
-        initRecycleView()
+//        initRecycleView()
     }
 
-    private fun initRecycleView() {
-        val layoutManager = GridLayoutManager(this, 2)
-        photo_recycle_view.layoutManager = layoutManager
-        val myAdapter = MyAdapter(recyclerViewPresenter)
-        photo_recycle_view.adapter = myAdapter
-    }
+//    private fun initRecycleView() {
+//        val layoutManager = GridLayoutManager(this, 2)
+//        photo_recycle_view.layoutManager = layoutManager
+//        val myAdapter = MyAdapter(recyclerViewPresenter)
+//        photo_recycle_view.adapter = myAdapter
+//    }
 
     override fun showToast(s: String) {
         Toast.makeText(this, s, Toast.LENGTH_LONG).show()

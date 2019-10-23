@@ -1,6 +1,8 @@
 package com.example.imagination.les3__image_recycler_extended.presenter
 
 import android.annotation.SuppressLint
+import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.imagination.R
 import com.example.imagination.img_api.ImageProvider
 import com.example.imagination.img_api.SearchImageProvider
@@ -26,7 +28,12 @@ class RecyclerViewPresenter : IRecyclerViewPresenter, MvpPresenter<PhotoView>() 
     }
 
     @SuppressLint("CheckResult")
-    private fun getPhotos() {
+    private fun getPhotos(page: Int = 0) {
+        viewState.showLoading(true)
+
+        if (page == 1)
+            imageProvider.resetPage()
+
         imageProvider.searchImage()
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
@@ -34,6 +41,7 @@ class RecyclerViewPresenter : IRecyclerViewPresenter, MvpPresenter<PhotoView>() 
                 { result: ImageReqResult -> run {
                     photoList.addAll(result.photos)
                     viewState.notifyDataChanged()
+                    viewState.showLoading(false)
                 }},
                 { error -> error.printStackTrace() }
             )
@@ -56,5 +64,24 @@ class RecyclerViewPresenter : IRecyclerViewPresenter, MvpPresenter<PhotoView>() 
         val img = photoList[pos]
         viewState.showToast(img.url)
         viewState.openImage(img.id)
+    }
+
+    fun recyclerViewEndPageListener() : RecyclerView.OnScrollListener {
+        return object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+
+                if (!recyclerView.canScrollVertically(1)) {
+                    getPhotos()
+                }
+            }
+        }
+    }
+
+    fun recyclerViewRefreshListener () : SwipeRefreshLayout.OnRefreshListener {
+        return SwipeRefreshLayout.OnRefreshListener {
+            getPhotos(1)
+            viewState.stopRefreshing()
+        }
     }
 }
