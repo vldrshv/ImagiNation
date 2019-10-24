@@ -53,7 +53,6 @@ class RecyclerViewPresenter : IRecyclerViewPresenter, MvpPresenter<PhotoView>() 
         val photoModel = photoList[position]
 
         iViewHolder.setImageOne(photoModel.src.landscape)
-        iViewHolder.setBackground(R.color.colorGray)
     }
 
     override fun getItemCount(): Int {

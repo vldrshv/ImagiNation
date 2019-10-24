@@ -1,20 +1,16 @@
 package com.example.imagination.les3__image_recycler_extended.view
 
-import android.graphics.Color
 import android.util.Log
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.imagination.R
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.BaseAdapter
 import android.widget.ImageView
-import com.example.imagination.img_api.model.Photo
 import com.example.imagination.les3__image_recycler_extended.presenter.RecyclerViewPresenter
 import com.squareup.picasso.Picasso
 import moxy.viewstate.strategy.SingleStateStrategy
 import moxy.viewstate.strategy.StateStrategyType
-import kotlin.random.Random
 
 class MyAdapter (var recyclerViewPresenter: RecyclerViewPresenter)
     : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
@@ -49,10 +45,6 @@ class MyAdapter (var recyclerViewPresenter: RecyclerViewPresenter)
         override fun setImageOne(sourceUrl: String) {
             Log.i(CLASS_TAG, sourceUrl)
             Picasso.get().load(sourceUrl).resize(600, 400).centerCrop().into(image)
-        }
-
-        override fun setBackground(color: Int) {
-//            image.setBackgroundColor(color)
         }
 
         override fun getPos() = position
