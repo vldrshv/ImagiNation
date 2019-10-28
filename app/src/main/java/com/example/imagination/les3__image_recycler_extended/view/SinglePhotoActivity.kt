@@ -6,8 +6,10 @@ import android.util.Log
 import android.view.View
 import com.example.imagination.R
 import com.example.imagination.les3__image_recycler_extended.presenter.SinglePhotoPresenter
+import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_single_photo.*
+import java.lang.Exception
 
 class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
 
@@ -25,11 +27,30 @@ class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
 
         expandBtn.setOnClickListener { externalInfoLayout.visibility = if (externalInfoLayout.visibility == View.VISIBLE) View.GONE else View.VISIBLE }
         restoreView()
+
+        showLoading(true)
     }
 
     override fun showImage(url: String) {
         Log.i(CLASS_TAG, url)
-        Picasso.get().load(url).into(imageView)
+        Picasso.get().load(url).into(imageView, object : Callback{
+            override fun onSuccess() {
+                showLoading(false)
+
+            }
+
+            override fun onError(e: Exception?) {
+                e!!.printStackTrace()
+            }
+        })
+    }
+
+    fun showLoading(isVisible: Boolean) {
+        progressBar.visibility = if (isVisible) View.VISIBLE else View.GONE
+    }
+
+    override fun showPhotographer(photographer: String) {
+        photographerTv.text = photographer
     }
 
     override fun showDescription(description: String) {

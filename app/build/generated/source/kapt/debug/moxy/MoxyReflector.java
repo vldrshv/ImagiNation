@@ -12,6 +12,10 @@ import com.example.imagination.les2__async_task.AsyncPresenter;
 import com.example.imagination.les2__async_task.AsyncPresenter$$ViewStateProvider;
 import com.example.imagination.les2__async_task.AsyncTaskActivity;
 import com.example.imagination.les2__async_task.AsyncTaskActivity$$PresentersBinder;
+import com.example.imagination.les5__room.UserPresenter;
+import com.example.imagination.les5__room.UserPresenter$$ViewStateProvider;
+import com.example.imagination.les5__room.view.RoomActivity;
+import com.example.imagination.les5__room.view.RoomActivity$$PresentersBinder;
 import java.lang.Class;
 import java.lang.Object;
 import java.util.Arrays;
@@ -36,12 +40,14 @@ public final class MoxyReflector {
 		sViewStateProviders.put(TextViewPresenter.class, new TextViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(AsyncPresenter.class, new AsyncPresenter$$ViewStateProvider());
 		sViewStateProviders.put(com.example.imagination.les3__image_recycler_extended.presenter.RecyclerViewPresenter.class, new com.example.imagination.les3__image_recycler_extended.presenter.RecyclerViewPresenter$$ViewStateProvider());
+		sViewStateProviders.put(UserPresenter.class, new UserPresenter$$ViewStateProvider());
 
 		sPresenterBinders = new HashMap<>();
 		sPresenterBinders.put(PhotoViewActivity.class, Arrays.<Object>asList(new PhotoViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(TextViewActivity.class, Arrays.<Object>asList(new TextViewActivity$$PresentersBinder()));
 		sPresenterBinders.put(AsyncTaskActivity.class, Arrays.<Object>asList(new AsyncTaskActivity$$PresentersBinder()));
 		sPresenterBinders.put(com.example.imagination.les3__image_recycler_extended.view.PhotoViewActivity.class, Arrays.<Object>asList(new com.example.imagination.les3__image_recycler_extended.view.PhotoViewActivity$$PresentersBinder()));
+		sPresenterBinders.put(RoomActivity.class, Arrays.<Object>asList(new RoomActivity$$PresentersBinder()));
 
 		sStrategies = new HashMap<>();
 		sStrategies.put(AddToEndSingleStrategy.class, new AddToEndSingleStrategy());

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_margin="4dp"
+        android:gravity="center|start"
+        android:paddingStart="12dp"
+        android:text="USER" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_margin="4dp"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_margin="4dp"
+        app:icon="@android:drawable/ic_delete"
+        app:iconGravity="textStart" />
+</GridLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
