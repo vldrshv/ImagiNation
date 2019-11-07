@@ -6,10 +6,54 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColorLight</item>
 
-    <style name="AppTheme.RippleImageButton">
-        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/iconLightTint</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="cardBackgroundColor">#FFFFFFFF</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColorDark</item>
+
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="iconTint">@color/iconDarkTint</item>
+        <item name="cardBackgroundColor">#FF424242</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="TextView">
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="TextView.Headline" parent="TextView">
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="TextView.Secondary" parent="TextView">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dividerColor</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 
 </resources>

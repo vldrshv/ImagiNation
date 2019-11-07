@@ -15,67 +15,72 @@
 11-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:7:5-33:19
-14        android:name="com.example.imagination.les5__room.database.AppDatabase"
-14-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:9-56
+13-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:7:5-32:19
+14        android:name="com.example.imagination.core.model.database.AppDatabaseConfig"
+14-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:8:9-62
 15        android:allowBackup="true"
-15-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:8:9-35
+15-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\969f56928fce6fdd8f3190d02717442a\core-1.1.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\60ddf4def150ee36ad0a1e9ed8688d71\core-1.1.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:9:9-43
+19-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:10:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:10:9-41
+20-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:11:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:11:9-54
+21-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-35
+22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:9-35
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme" >
-24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:9-40
-25
-26        <!-- <meta-data android:name="DATABASE" android:value="database" /> -->
-27        <!-- <meta-data android:name="VERSION" android:value="1" /> -->
-28        <!-- <meta-data android:name="QUERY_LOG" android:value="true" /> -->
-29        <activity android:name="com.example.imagination.les5__room.view.RoomActivity" >
-29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:18:9-24:20
-29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:18:19-63
-30            <intent-filter>
-30-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:19:13-23:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:17-69
-31-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:22:17-77
-33-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:22:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity android:name="com.example.imagination.les3__image_recycler_extended.view.SinglePhotoActivity" />
-36-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:25:9-92
-36-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:25:19-89
-37        <activity android:name="com.example.imagination.les3__image_recycler_extended.view.PhotoViewActivity" >
-37-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:9-32:20
-37-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:26:19-87
-38
-39            <!-- <intent-filter> -->
-40            <!-- <action android:name="android.intent.action.MAIN" /> -->
+24-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:14:9-40
+25        <activity android:name="com.example.imagination.core.view.activities.MainActivity" >
+25-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:15:9-22:20
+25-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:16:13-62
+26            <intent-filter>
+26-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:18:17-69
+27-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:17-77
+29-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.example.imagination.les5__room.view.RoomActivity" >
+32-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:23:9-30:20
+32-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:23:19-63
+33
+34            <!-- <intent-filter> -->
+35            <!-- <action android:name="android.intent.action.MAIN" /> -->
+36            <!--  -->
+37            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+38            <!-- </intent-filter> -->
+39        </activity>
+40        <activity android:name="com.example.imagination.core.view.activities.SinglePhotoActivity" />
+40-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:31:9-78
+40-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:31:19-75
 41
-42
-43            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-44            <!-- </intent-filter> -->
-45        </activity>
-46
-47        <provider
-47-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\1aec73f20c504f0a8beeddde1e4916b3\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-48            android:name="com.squareup.picasso.PicassoProvider"
-48-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\1aec73f20c504f0a8beeddde1e4916b3\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-49            android:authorities="com.example.imagination.com.squareup.picasso"
-49-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\1aec73f20c504f0a8beeddde1e4916b3\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-50            android:exported="false" />
-50-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\1aec73f20c504f0a8beeddde1e4916b3\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+42        <provider
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+43            android:name="com.squareup.picasso.PicassoProvider"
+43-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+44            android:authorities="com.example.imagination.com.squareup.picasso"
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+45            android:exported="false" />
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+46        <provider
+46-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+48            android:authorities="com.example.imagination.lifecycle-process"
+48-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+49            android:exported="false"
+49-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+50            android:multiprocess="true" />
+50-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
 51    </application>
 52
 53</manifest>

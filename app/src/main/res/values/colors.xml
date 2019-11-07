@@ -6,4 +6,15 @@
 
     <color name="colorGray">#afafaf</color>
     <color name="successColor">#19FF84</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#2f2f2f</color>
+    <color name="iconDarkTint">#afafaf</color>
+    <color name="iconLightTint">#7f7f7f</color>
+
+    <color name="textColorLight">#1f1f1f</color>
+    <color name="textColorDark">#afafaf</color>
+    <color name="secondaryTextColorLight">#6f6f6f</color>
+    <color name="secondaryTextColorDark">#8f8f8f</color>
+
+    <color name="dividerColor">#206f6f6f</color>
 </resources>
