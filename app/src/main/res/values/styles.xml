@@ -30,10 +30,12 @@
         <item name="android:navigationBarColor">@color/black</item>
         <item name="iconTint">@color/iconDarkTint</item>
         <item name="cardBackgroundColor">#FF424242</item>
+        <item name="snackbarTextViewStyle">@style/TextView.Secondary</item>
 
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+<!--    views   -->
     <style name="TextView">
         <item name="android:layout_marginStart">4dp</item>
         <item name="android:paddingStart">4dp</item>

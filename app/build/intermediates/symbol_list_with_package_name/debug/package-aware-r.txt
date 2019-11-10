@@ -958,6 +958,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color snackbarBackgroundColor
 color successColor
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -1581,7 +1582,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addToFavouritesBtn
 id addUser
 id alertTitle
 id all

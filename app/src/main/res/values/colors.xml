@@ -17,4 +17,5 @@
     <color name="secondaryTextColorDark">#8f8f8f</color>
 
     <color name="dividerColor">#206f6f6f</color>
+    <color name="snackbarBackgroundColor">#FF424242</color>
 </resources>

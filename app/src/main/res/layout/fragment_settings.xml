@@ -76,7 +76,8 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="8"
                     android:layout_gravity="fill"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp">
 
                     <TextView
                         style="@style/TextView.Headline"

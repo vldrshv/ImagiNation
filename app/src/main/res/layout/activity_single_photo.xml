@@ -95,57 +95,40 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </com.google.android.material.card.MaterialCardView>
 
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:columnCount="3"
+                android:layout_margin="2dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    style="@style/Widget.MaterialComponents.FloatingActionButton"
+                    android:id="@+id/dislikeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/baseline_thumb_down_24"
+                    app:tint="@color/colorAccent"
+                    android:backgroundTint="?attr/cardBackgroundColor"
+                    app:borderWidth="0dp"
+                    />
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    style="@style/Widget.MaterialComponents.FloatingActionButton"
+                    android:id="@+id/likeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/baseline_thumb_up_24"
+                    app:tint="@android:color/white"
+                    android:backgroundTint="@color/colorAccent"
+                    app:borderWidth="0dp"
+                    />
+            </GridLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:columnCount="3">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/dislikeBtn"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:insetLeft="10dp"
-                android:insetTop="10dp"
-                android:insetRight="10dp"
-                android:insetBottom="10dp"
-                app:cornerRadius="60dp"
-                app:icon="@drawable/baseline_thumb_down_black_24"
-                app:iconGravity="textStart"
-                app:iconTint="@color/colorAccent"/>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                style="@style/Widget.MaterialComponents.FloatingActionButton"
-                android:id="@+id/addToFavouritesBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/baseline_whatshot_24"
-                app:tint="@android:color/white"
-                android:backgroundTint="@color/colorAccent"
-                app:borderWidth="0dp"
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/likeBtn"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:insetLeft="10dp"
-                android:insetTop="10dp"
-                android:insetRight="10dp"
-                android:insetBottom="10dp"
-                app:cornerRadius="60dp"
-                app:icon="@drawable/baseline_thumb_up_black_24"
-                app:iconGravity="textStart"
-                app:iconTint="@color/colorAccent"/>
-        </GridLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

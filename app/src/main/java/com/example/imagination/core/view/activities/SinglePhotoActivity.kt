@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.example.imagination.R
 import com.example.imagination.AppConfig
 import com.example.imagination.core.presenter.LikedPhotoPresenter
@@ -13,6 +14,9 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_single_photo.*
 import java.lang.Exception
+import com.google.android.material.snackbar.Snackbar
+
+
 
 class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
 
@@ -40,7 +44,10 @@ class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
     private fun setButtonListeners() {
         expandBtn.setOnClickListener { showDescription() }
         dislikeBtn.setOnClickListener { daoPresenter.dislikePhoto(presenter.getLoadedPhoto()) }
-        likeBtn.setOnClickListener { daoPresenter.likePhoto(presenter.getLoadedPhoto()) }
+        likeBtn.setOnClickListener {
+            daoPresenter.likePhoto(presenter.getLoadedPhoto())
+            showToast()
+        }
     }
     private fun showDescription() {
         externalInfoLayout.visibility = if (externalInfoLayout.visibility == View.VISIBLE) View.GONE else View.VISIBLE
@@ -54,7 +61,6 @@ class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
     fun showLoading(isVisible: Boolean) {
         progressBar.visibility = if (isVisible) View.VISIBLE else View.GONE
     }
-
 
     override fun showImage(url: String) {
         Log.i(CLASS_TAG, url)
@@ -81,4 +87,6 @@ class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
         onBackPressed()
         return true
     }
+    fun showToast() =
+        Toast.makeText(this, "Мы переместили фото в раздел \"Любимые фотографии\"", Toast.LENGTH_SHORT).show()
 }
