@@ -33,7 +33,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@color/colorAccent" />
+                    android:src="@drawable/imagination_lable"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-<!--THEME-->
+                <!--THEME-->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -108,8 +108,9 @@
                             android:text="Light mode" />
                     </com.google.android.material.chip.ChipGroup>
                 </androidx.appcompat.widget.LinearLayoutCompat>
-                <View style="@style/Divider"/>
-<!--RELOAD GALLERY-->
+
+                <View style="@style/Divider" />
+                <!--RELOAD GALLERY-->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -126,7 +127,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:text="Reload gallery automatically (soon)" />
+                            android:text="Reload gallery automatically" />
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="wrap_content"
@@ -141,6 +142,7 @@
                                 android:text="Last update: " />
 
                             <TextView
+                                android:id="@+id/last_gallery_update_date"
                                 style="@style/TextView.Secondary"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -151,14 +153,16 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/reloadGallerySwitcher"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginEnd="4dp"
                         android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
                         android:layout_weight="7" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
-                <View style="@style/Divider"/>
-<!--CLEAN CACHE: GALLERY-->
+
+                <View style="@style/Divider" />
+                <!--CLEAN CACHE: GALLERY-->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -175,7 +179,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:text="Clean gallery cache (soon)" />
+                            android:text="Clean gallery cache" />
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="wrap_content"
@@ -190,6 +194,7 @@
                                 android:text="Cache size: " />
 
                             <TextView
+                                android:id="@+id/gallery_cache_size_tv"
                                 style="@style/TextView.Secondary"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -200,16 +205,18 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/gallery_cache_size_clean_btn"
                         style="@style/Widget.MaterialComponents.Button.TextButton"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="clean"
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
-                        android:layout_weight="7" />
+                        android:layout_weight="7"
+                        android:text="clean" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
-                <View style="@style/Divider"/>
-<!--CLEAN CACHE: LIKED PHOTOS-->
+
+                <View style="@style/Divider" />
+                <!--CLEAN CACHE: LIKED PHOTOS-->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -226,7 +233,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:text="Clean Liked Photos cache (soon)" />
+                            android:text="Clean Liked Photos cache" />
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="wrap_content"
@@ -241,6 +248,7 @@
                                 android:text="Cache size: " />
 
                             <TextView
+                                android:id="@+id/liked_photos_cache_size_tv"
                                 style="@style/TextView.Secondary"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -251,15 +259,19 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/liked_photos_cache_size_clean_btn"
                         style="@style/Widget.MaterialComponents.Button.TextButton"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="clean"
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
-                        android:layout_weight="7" />
+                        android:layout_weight="7"
+                        android:text="clean" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
-                <View style="@style/Divider" android:background="@android:color/transparent"/>
+
+                <View
+                    style="@style/Divider"
+                    android:background="@android:color/transparent" />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </com.google.android.material.card.MaterialCardView>
 

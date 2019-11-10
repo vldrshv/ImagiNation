@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import com.example.imagination.core.presenter.BasePhotoPresenter
-import com.example.imagination.core.presenter.RecyclerViewPresenter
 import com.squareup.picasso.Picasso
 import moxy.viewstate.strategy.SingleStateStrategy
 import moxy.viewstate.strategy.StateStrategyType
@@ -47,8 +46,7 @@ class MyAdapter (var presenter: BasePhotoPresenter, var screenSize: Point, var i
         }
 
         override fun setImageOne(sourceUrl: String) {
-            Log.i(CLASS_TAG, sourceUrl)
-            Picasso.get().load(sourceUrl)/*.resize(width, height).centerCrop()*/.into(image)
+            Picasso.get().load(sourceUrl).placeholder(R.drawable.placeholder).into(image)
         }
 
         override fun getPos() = position

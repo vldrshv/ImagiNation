@@ -13,7 +13,7 @@ interface PhotoSourceDao {
     @Query("SELECT * FROM PhotoSource WHERE source_id = :id")
     fun getById (id: Int): Single<PhotoSource>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert (photoSource: PhotoSource)
 
     @Update

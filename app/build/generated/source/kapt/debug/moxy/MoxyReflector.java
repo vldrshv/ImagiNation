@@ -1,13 +1,13 @@
 package moxy;
 
+import com.example.imagination.core.presenter.GalleryPresenter;
+import com.example.imagination.core.presenter.GalleryPresenter$$ViewStateProvider;
 import com.example.imagination.core.presenter.LikedPhotoPresenter;
 import com.example.imagination.core.presenter.LikedPhotoPresenter$$ViewStateProvider;
-import com.example.imagination.core.presenter.RecyclerViewPresenter;
-import com.example.imagination.core.presenter.RecyclerViewPresenter$$ViewStateProvider;
-import com.example.imagination.core.view.activities.ui.dashboard.LikedGalleryFragment;
-import com.example.imagination.core.view.activities.ui.dashboard.LikedGalleryFragment$$PresentersBinder;
 import com.example.imagination.core.view.activities.ui.gallery.GalleryFragment;
 import com.example.imagination.core.view.activities.ui.gallery.GalleryFragment$$PresentersBinder;
+import com.example.imagination.core.view.activities.ui.liked_photos.LikedGalleryFragment;
+import com.example.imagination.core.view.activities.ui.liked_photos.LikedGalleryFragment$$PresentersBinder;
 import com.example.imagination.les5__room.UserPresenter;
 import com.example.imagination.les5__room.UserPresenter$$ViewStateProvider;
 import com.example.imagination.les5__room.view.RoomActivity;
@@ -30,13 +30,13 @@ public final class MoxyReflector {
 
 	static {
 		sViewStateProviders = new HashMap<>();
+		sViewStateProviders.put(GalleryPresenter.class, new GalleryPresenter$$ViewStateProvider());
 		sViewStateProviders.put(LikedPhotoPresenter.class, new LikedPhotoPresenter$$ViewStateProvider());
-		sViewStateProviders.put(RecyclerViewPresenter.class, new RecyclerViewPresenter$$ViewStateProvider());
 		sViewStateProviders.put(UserPresenter.class, new UserPresenter$$ViewStateProvider());
 
 		sPresenterBinders = new HashMap<>();
-		sPresenterBinders.put(LikedGalleryFragment.class, Arrays.<Object>asList(new LikedGalleryFragment$$PresentersBinder()));
 		sPresenterBinders.put(GalleryFragment.class, Arrays.<Object>asList(new GalleryFragment$$PresentersBinder()));
+		sPresenterBinders.put(LikedGalleryFragment.class, Arrays.<Object>asList(new LikedGalleryFragment$$PresentersBinder()));
 		sPresenterBinders.put(RoomActivity.class, Arrays.<Object>asList(new RoomActivity$$PresentersBinder()));
 
 		sStrategies = new HashMap<>();

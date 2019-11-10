@@ -16,20 +16,20 @@
 12
 13    <application
 13-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:7:5-32:19
-14        android:name="com.example.imagination.core.model.database.AppDatabaseConfig"
-14-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:8:9-62
+14        android:name="com.example.imagination.AppConfig"
+14-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:8:9-34
 15        android:allowBackup="true"
 15-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\60ddf4def150ee36ad0a1e9ed8688d71\core-1.1.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\a8c6a10d62d9e00e4c5743ef23918398\core-1.1.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
 19        android:icon="@mipmap/ic_launcher"
 19-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:10:9-43
 20        android:label="@string/app_name"
 20-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:11:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-54
+21        android:roundIcon="@mipmap/ic_launcher"
+21-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:12:9-48
 22        android:supportsRtl="true"
 22-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:13:9-35
 23        android:testOnly="true"
@@ -64,23 +64,23 @@
 40-->C:\Users\user\Desktop\ImagiNation\app\src\main\AndroidManifest.xml:31:19-75
 41
 42        <provider
-42-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\572f823fd344f4b30fb5ce57d1e53150\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 43            android:name="com.squareup.picasso.PicassoProvider"
-43-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+43-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\572f823fd344f4b30fb5ce57d1e53150\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 44            android:authorities="com.example.imagination.com.squareup.picasso"
-44-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\572f823fd344f4b30fb5ce57d1e53150\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 45            android:exported="false" />
-45-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\230598ce997f24e7d87bc7a60e69bba2\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-2\files-2.1\572f823fd344f4b30fb5ce57d1e53150\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 46        <provider
-46-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+46-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e982f0b5f81cfb5fa408f02dcf1eba4d\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
 47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-47-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+47-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e982f0b5f81cfb5fa408f02dcf1eba4d\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
 48            android:authorities="com.example.imagination.lifecycle-process"
-48-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+48-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e982f0b5f81cfb5fa408f02dcf1eba4d\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
 49            android:exported="false"
-49-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+49-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e982f0b5f81cfb5fa408f02dcf1eba4d\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
 50            android:multiprocess="true" />
-50-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\9407a5b908ece25b80cfba8c478c2a4c\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+50-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\e982f0b5f81cfb5fa408f02dcf1eba4d\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
 51    </application>
 52
 53</manifest>

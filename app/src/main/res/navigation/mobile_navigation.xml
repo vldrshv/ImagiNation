@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/navigation_liked_photos"
-        android:name="com.example.imagination.core.view.activities.ui.dashboard.LikedGalleryFragment"
+        android:name="com.example.imagination.core.view.activities.ui.liked_photos.LikedGalleryFragment"
         android:label="@string/title_liked_photos"
         tools:layout="@layout/fragment_liked_gallery" />
 

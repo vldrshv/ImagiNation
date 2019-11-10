@@ -2,68 +2,88 @@ package com.example.imagination.core.view.activities.ui.settings
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.get
+import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.imagination.R
-import com.example.imagination.core.model.database.AppDatabaseConfig
+import com.example.imagination.core.presenter.SettingsPresenter
+import com.example.imagination.core.view.ISettingsView
 import com.example.imagination.core.view.activities.MainActivity
-import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
+import com.google.android.material.switchmaterial.SwitchMaterial
+import kotlinx.android.synthetic.main.fragment_settings.*
 
-class SettingsFragment : Fragment(), ChipGroup.OnCheckedChangeListener {
+class SettingsFragment : Fragment(), ISettingsView {
     private val CLASS_TAG = "SettingsFragment"
     lateinit var root: View
-    private val appSettings = AppDatabaseConfig.getInstance().getSettings()
-    private var lastCheckedId = 0
+    private lateinit var presenter: SettingsPresenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         root = inflater.inflate(R.layout.fragment_settings, container, false)
-        val themeModeSelection = root.findViewById<ChipGroup>(R.id.theme_mode_selection)
-        setCheckedSelector(themeModeSelection)
-        themeModeSelection.setOnCheckedChangeListener(this)
+
+        presenter = SettingsPresenter(this, context!!)
+
+        initThemeSelector()
+        initAutoSyncSelector()
+
+        setLastGalleryUpdateDate()
+        setGalleryCacheSettings()
+        setLikedPhotosCacheSettings()
+
         return root
     }
 
+    private fun initThemeSelector() {
+        val themeModeSelection = root.findViewById<ChipGroup>(R.id.theme_mode_selection)
+        setCheckedSelector(themeModeSelection)
+        themeModeSelection.setOnCheckedChangeListener(presenter.onCheckedChanged())
+    }
+    private fun initAutoSyncSelector() {
+        val reloadGallerySwitcher = root.findViewById<SwitchMaterial>(R.id.reloadGallerySwitcher)
+        setSwitchSelector(reloadGallerySwitcher)
+        reloadGallerySwitcher.setOnCheckedChangeListener(presenter.onSwitchCheckedChange())
+
+    }
+
+    private fun setLastGalleryUpdateDate() {
+        val lastGalleryUpdateDate = root.findViewById<TextView>(R.id.last_gallery_update_date)
+        lastGalleryUpdateDate.text = presenter.getLastGalleryUpdateDate()
+    }
+    private fun setGalleryCacheSettings() {
+        setGalleryCacheSize()
+        val cleanGalleryCacheBtn = root.findViewById(R.id.gallery_cache_size_clean_btn) as Button
+        cleanGalleryCacheBtn.setOnClickListener { presenter.cleanGalleryCache() }
+    }
+    private fun setLikedPhotosCacheSettings() {
+        setLikedPhotosCacheSize()
+        val cleanLikedPhotosCacheBtn = root.findViewById(R.id.liked_photos_cache_size_clean_btn) as Button
+        cleanLikedPhotosCacheBtn.setOnClickListener { presenter.cleanLikedPhotosCache() }
+    }
+
+
     private fun setCheckedSelector(chipGroup: ChipGroup) {
-        val mode = appSettings.getInt("themeId", R.style.AppTheme)
-        if (mode == R.style.AppTheme) {
-            chipGroup.check(R.id.light_mode_theme_selection)
-            lastCheckedId = R.id.light_mode_theme_selection
-        }
-        else {
-            chipGroup.check(R.id.dark_mode_theme_selection)
-            lastCheckedId = R.id.dark_mode_theme_selection
-        }
+        chipGroup.check(presenter.getCheckedId(chipGroup))
+    }
+    private fun setSwitchSelector(switchMaterial: SwitchMaterial) {
+        switchMaterial.isChecked = presenter.getAutoLoadingSetting()
     }
 
-    override fun onCheckedChanged(group: ChipGroup?, checkedId: Int) {
-        Log.i(CLASS_TAG, "$checkedId")
-        if (checkedId == -1) {
-            group!!.check(lastCheckedId)
-            return
-        }
-        if (checkedId == lastCheckedId)
-            return
-        var themeId = when(checkedId) {
-            R.id.light_mode_theme_selection -> R.style.AppTheme
-            R.id.dark_mode_theme_selection -> R.style.AppTheme_Dark
-            else -> 0
-        }
-        lastCheckedId = checkedId
-        reloadActivity(themeId)
-    }
-
-    private fun reloadActivity(themeId: Int) {
+    override fun reloadActivity(themeId: Int) {
         val intent = Intent(context, MainActivity::class.java)
-        val editor = appSettings.edit()
-        editor.putInt("themeId", themeId)
-        editor.apply()
-        intent.putExtra("themeId", themeId)
         activity!!.finish()
         startActivity(intent)
+    }
+
+    override fun setGalleryCacheSize() {
+        val galleryCacheTv = root.findViewById(R.id.gallery_cache_size_tv) as TextView
+        galleryCacheTv.text = "${presenter.getGalleryCacheSize()} images"
+    }
+
+    override fun setLikedPhotosCacheSize() {
+        val likedPhotosCacheTv = root.findViewById(R.id.liked_photos_cache_size_tv) as TextView
+        likedPhotosCacheTv.text = "${presenter.getLikedPhotosCacheSize()} images"
     }
 }

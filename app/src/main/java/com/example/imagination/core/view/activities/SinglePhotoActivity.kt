@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.example.imagination.R
-import com.example.imagination.core.model.database.AppDatabaseConfig
+import com.example.imagination.AppConfig
 import com.example.imagination.core.presenter.LikedPhotoPresenter
 import com.example.imagination.core.presenter.SinglePhotoPresenter
 import com.example.imagination.core.view.SinglePhotoView
@@ -19,13 +19,13 @@ class SinglePhotoActivity : AppCompatActivity(), SinglePhotoView {
     private val CLASS_TAG = "SinglePhotoActivity"
     private var presenter: SinglePhotoPresenter = SinglePhotoPresenter(this)
     private var daoPresenter: LikedPhotoPresenter = LikedPhotoPresenter()
-    private val appSettings = AppDatabaseConfig.getInstance().getSettings()
+    private val appSettings = AppConfig.getInstance().getSettings()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val themeId = appSettings.getInt("themeId", R.style.AppTheme)
-        setTheme(themeId)
+
+        setTheme(appSettings.getThemeId())
         setContentView(R.layout.activity_single_photo)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

@@ -1,4 +1,4 @@
-package com.example.imagination.core.view.activities.ui.dashboard
+package com.example.imagination.core.view.activities.ui.liked_photos
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -8,14 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
-import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.imagination.R
-import com.example.imagination.core.presenter.BasePhotoPresenter
 import com.example.imagination.core.presenter.LikedPhotoPresenter
-import com.example.imagination.core.presenter.RecyclerViewPresenter
 import com.example.imagination.core.view.PhotoView
 import com.example.imagination.core.view.activities.SinglePhotoActivity
 import com.example.imagination.core.view.recycler.ItemDecoration
@@ -68,10 +65,6 @@ class LikedGalleryFragment : MvpAppCompatFragment(), PhotoView {
 
     private fun initRefreshing() {
         refreshLayout.setOnRefreshListener(presenter.recyclerViewRefreshListener())
-    }
-
-    override fun showToast(s: String) {
-        Toast.makeText(context, s, Toast.LENGTH_LONG).show()
     }
 
     override fun openImage(imageId: Int) {

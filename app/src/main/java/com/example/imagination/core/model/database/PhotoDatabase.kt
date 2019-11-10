@@ -8,6 +8,6 @@ import com.example.imagination.core.model.entity.PhotoSource
 @Database(entities = [Photo::class, PhotoSource::class], version = 2)
 abstract class PhotoDatabase : RoomDatabase() {
     private val CLASS_TAG = "LikedPhotoDatabase"
-    abstract fun getLikedPhotosDao() : PhotoDao
+    abstract fun getPhotosDao() : PhotoDao
     abstract fun getPhotoSourceDao() : PhotoSourceDao
 }

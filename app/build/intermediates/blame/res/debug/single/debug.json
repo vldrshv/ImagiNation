@@ -92,6 +92,10 @@
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xxhdpi\\baseline_settings_applications_black_36.png"
     },
     {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_placeholder.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-hdpi\\placeholder.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_baseline_photo_library_black_18.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xxhdpi\\baseline_photo_library_black_18.png"
     },
@@ -108,8 +112,16 @@
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xxhdpi\\outline_settings_applications_black_48.png"
     },
     {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_imagination_lable.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-hdpi\\imagination_lable.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_outline_photo_library_black_24.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xxhdpi\\outline_photo_library_black_24.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\menu-v26_bottom_nav_menu.xml.flat",
@@ -372,24 +384,24 @@
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xhdpi\\baseline_settings_applications_black_18.png"
     },
     {
-        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_outline_photo_library_black_24.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-mdpi\\outline_photo_library_black_24.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_outline_settings_applications_black_48.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-mdpi\\outline_settings_applications_black_48.png"
     },
     {
-        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_baseline_whatshot_black_24.png.flat",
         "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\drawable-xhdpi\\baseline_whatshot_black_24.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\user\\Desktop\\ImagiNation\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_baseline_insert_photo_black_36.png.flat",

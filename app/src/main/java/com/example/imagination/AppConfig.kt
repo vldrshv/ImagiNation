@@ -1,29 +1,29 @@
-package com.example.imagination.core.model.database
+package com.example.imagination
 
 import android.app.Application
-import android.content.Context
-import android.content.SharedPreferences
 import android.util.Log
 import androidx.room.Room
+import com.example.imagination.core.model.SharedPreferencesManager
+import com.example.imagination.core.model.database.PhotoDatabase
 
-class AppDatabaseConfig : Application() {
+class AppConfig : Application() {
     private val CLASS_TAG = "AppDatabaseConfig"
     private var database: PhotoDatabase? = null
-    private lateinit var appSettings: SharedPreferences
+    private lateinit var appSettings: SharedPreferencesManager
 
     override fun onCreate() {
         super.onCreate()
         instance = this
         database = Room.databaseBuilder(this, PhotoDatabase::class.java, "database")
             .build()
-        appSettings = getSharedPreferences("app_settings", Context.MODE_PRIVATE)
+        appSettings = SharedPreferencesManager(this)
         Log.i(CLASS_TAG, "database $CLASS_TAG has ben created")
     }
     fun getDatabase() = database!!
     fun getSettings() = appSettings
 
     companion object {
-        private var instance: AppDatabaseConfig? = null
+        private var instance: AppConfig? = null
         fun getInstance() = instance!!
     }
 }

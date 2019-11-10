@@ -855,12 +855,14 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color dividerColor
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color iconDarkTint
 color iconLightTint
 color material_blue_grey_800
@@ -1466,6 +1468,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon_tint
 drawable icon_tint_color_state_list
+drawable imagination_lable
 drawable liked_photos_icon_animation_list
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1508,6 +1511,7 @@ drawable outline_settings_applications_black_18
 drawable outline_settings_applications_black_24
 drawable outline_settings_applications_black_36
 drawable outline_settings_applications_black_48
+drawable placeholder
 drawable rounded_shape
 drawable settings_icon_animation_list
 drawable shadow
@@ -1584,6 +1588,8 @@ id all
 id always
 id async
 id auto
+id auto_sync_message_btn_close
+id auto_sync_message_layout
 id barrier
 id beginning
 id blocking
@@ -1649,6 +1655,8 @@ id filled
 id fitToContents
 id fixed
 id forever
+id gallery_cache_size_clean_btn
+id gallery_cache_size_tv
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1668,9 +1676,12 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id last_gallery_update_date
 id left
 id light_mode_theme_selection
 id likeBtn
+id liked_photos_cache_size_clean_btn
+id liked_photos_cache_size_tv
 id line1
 id line3
 id listMode
@@ -1743,6 +1754,7 @@ id progress_horizontal
 id radio
 id refreshLayout
 id refresh_layout
+id reloadGallerySwitcher
 id right
 id right_icon
 id right_side
@@ -2294,6 +2306,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style Divider
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
